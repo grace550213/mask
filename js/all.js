@@ -319,3 +319,19 @@ function showStore(area,city){
           document.querySelector('.store').innerHTML = storeData ; 
     	}
     }
+
+ /*  $(document).ready(function(){
+  $("showSide").click(function(){
+    $("leftbox").addClass("hideSide");
+  });
+});*/
+var arrow = document.querySelector('.arrow');
+arrow.onclick = function(){
+    var leftbox = document.querySelector('.leftbox');
+    var map = document.getElementById('map');
+	leftbox.classList.toggle('hide');
+	this.classList.toggle('arrowHide');
+	map.classList.toggle('mapChangeSize');
+   // leftbox.style.transform = 'translateX(-100%)';
+   // leftbox.style.display = 'hidden';
+}

@@ -3,7 +3,36 @@ $main-color:#73C0D8;
 
 .leftbox{
 	box-shadow: 2px 2px 4px #EEEEEE;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 30vw;
+    z-index: 20;
+    transition : .5s all ease;
 }
+
+
+.hide{
+	transform : translateX(-100%);
+	transition : .5s all ease;
+}
+.arrow{
+    color: #FFFFFF;
+    background-color:$main-color;
+    cursor: pointer;
+    position: absolute;
+    left: 30vw;
+    top: 70px;
+    padding: 10px 5px;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 2000;
+    transition : .5s all ease;
+}
+.arrowHide{
+	transform : translateX(-30vw);
+	transition : .5s all ease;
+}
+
 .header{
 	background-color: $main-color;
 	color: #FFFFFF;
@@ -66,6 +95,18 @@ $main-color:#73C0D8;
 	}
 }
 
+#map{
+	margin: 0;
+	height: 100vh;
+	width: 70vw;
+	position: absolute;
+	right: 0;
+	transition : .5s all ease;
+}
+.mapChangeSize{
+	width: 100vw !important;
+	transition : .5s all ease;
+}
 
 //markercluster的css
 .marker-cluster-small {
@@ -107,3 +148,18 @@ $main-color:#73C0D8;
 		line-height: 30px;
 		}
 
+@media (max-width: 414px) {
+	.leftbox{
+		width: 50vw;
+	}
+	.arrow{
+		left: 50vw;
+	}
+	.arrowHide{
+	transform : translateX(-50vw);
+	transition : .5s all ease;
+}
+	#map{
+		width: 50vw;
+	}
+}

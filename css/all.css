@@ -7997,7 +7997,45 @@ a.text-dark:hover, a.text-dark:focus {
 
 .leftbox {
   -webkit-box-shadow: 2px 2px 4px #EEEEEE;
-  box-shadow: 2px 2px 4px #EEEEEE; }
+  box-shadow: 2px 2px 4px #EEEEEE;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 30vw;
+  z-index: 20;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease; }
+
+.hide {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease; }
+
+.arrow {
+  color: #FFFFFF;
+  background-color: #73C0D8;
+  cursor: pointer;
+  position: absolute;
+  left: 30vw;
+  top: 70px;
+  padding: 10px 5px;
+  border-radius: 0px 5px 5px 0px;
+  z-index: 2000;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease; }
+
+.arrowHide {
+  -webkit-transform: translateX(-30vw);
+  -ms-transform: translateX(-30vw);
+  transform: translateX(-30vw);
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease; }
 
 .header {
   background-color: #73C0D8;
@@ -8046,6 +8084,22 @@ a.text-dark:hover, a.text-dark:focus {
   .store .store-btn:hover {
     color: #FFF4F4 !important; }
 
+#map {
+  margin: 0;
+  height: 100vh;
+  width: 70vw;
+  position: absolute;
+  right: 0;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease; }
+
+.mapChangeSize {
+  width: 100vw !important;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease; }
+
 .marker-cluster-small {
   background-color: rgba(181, 226, 140, 0.6); }
 
@@ -8079,3 +8133,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 .marker-cluster span {
   line-height: 30px; }
+
+@media (max-width: 414px) {
+  .leftbox {
+    width: 50vw; }
+  .arrow {
+    left: 50vw; }
+  .arrowHide {
+    -webkit-transform: translateX(-50vw);
+    -ms-transform: translateX(-50vw);
+    transform: translateX(-50vw);
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease; }
+  #map {
+    width: 50vw; } }
