@@ -307,7 +307,6 @@ function showStore(area,city){
     	    if(data[i].properties.town==area && data[i].properties.county==city){
           
           	   storeData +='<div class="eachStore" mapid="'+data[i].geometry.coordinates[1]+','+data[i].geometry.coordinates[0]+'"><h3 class="pt-2">'+data[i].properties.name
-          	                // '<a href="#" class="d-flex ml-auto flyTo"></a>
           	                +'</h3>'+
                              '<p class="mb-1">'+data[i].properties.address+'</p>'+
                              '<p class="mb-1">'+data[i].properties.phone+'</p>'+
@@ -320,11 +319,7 @@ function showStore(area,city){
     	}
     }
 
- /*  $(document).ready(function(){
-  $("showSide").click(function(){
-    $("leftbox").addClass("hideSide");
-  });
-});*/
+//左欄收縮
 var arrow = document.querySelector('.arrow');
 arrow.onclick = function(){
     var leftbox = document.querySelector('.leftbox');
@@ -332,6 +327,4 @@ arrow.onclick = function(){
 	leftbox.classList.toggle('hide');
 	this.classList.toggle('arrowHide');
 	map.classList.toggle('mapChangeSize');
-   // leftbox.style.transform = 'translateX(-100%)';
-   // leftbox.style.display = 'hidden';
 }

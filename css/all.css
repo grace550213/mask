@@ -8135,6 +8135,8 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 30px; }
 
 @media (max-width: 768px) {
+  .todayWeek {
+    font-size: 18px !important; }
   .leftbox {
     width: 50vw; }
   .peopleId {
