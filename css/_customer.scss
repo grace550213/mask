@@ -148,9 +148,15 @@ $main-color:#73C0D8;
 		line-height: 30px;
 		}
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
 	.leftbox{
 		width: 50vw;
+	}
+	.peopleId{
+		font-size: 10px !important;
+		span{
+			font-size: 14px !important;
+		}
 	}
 	.arrow{
 		left: 50vw;

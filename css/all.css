@@ -8134,9 +8134,13 @@ a.text-dark:hover, a.text-dark:focus {
 .marker-cluster span {
   line-height: 30px; }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   .leftbox {
     width: 50vw; }
+  .peopleId {
+    font-size: 10px !important; }
+    .peopleId span {
+      font-size: 14px !important; }
   .arrow {
     left: 50vw; }
   .arrowHide {
