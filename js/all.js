@@ -107,7 +107,7 @@ xhr.onload = function () {
                              '<p class="mb-1">'+data[i].properties.address+'</p>'+
                              '<p class="mb-1">'+data[i].properties.phone+'</p>'+
                              '<p class="mb-2">'+data[i].properties.note+'</p>'+
-                             '<div class="d-flex justify-content-between mb-2">'+
+                             '<div class="d-md-flex justify-content-md-between mb-2">'+
                              '<button type="button" class="btn btn-info store-btn">成人口罩&nbsp&nbsp&nbsp&nbsp<span>'+data[i].properties.mask_adult+'</span></button>'+
                              '<button type="button" class="btn btn-warning store-btn">兒童口罩&nbsp&nbsp&nbsp&nbsp<span>'+data[i].properties.mask_child+'</span></button></div></div>'
         	}  
